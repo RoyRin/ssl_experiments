@@ -18,6 +18,7 @@ from loguru import logger
 # Set device
 #device = torch.device("mps")
 device = torch.device("cuda")
+
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
 
 np.random.seed(478)
